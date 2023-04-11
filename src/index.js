@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from "react-dom";
-
+import About from './routes/About';
 import Home from './routes/Home';
 import {
   createBrowserRouter,
@@ -12,19 +12,24 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
+  // {
+  //   path: "",
+  //   element: <Home />, // Render Home component as the default component
+  // },
   {
     path: "/",
     element: <App />,
-   
+    
     children: [
       {
+        index:  true,
         path: "Home/",
         element: <Home />,
       },
-      // {
-      //   path: "about/",
-      //   element: <About />,
-      // },
+      {
+        path: "about/",
+        element: <About />,
+      },
     ],
   },
 ]);
