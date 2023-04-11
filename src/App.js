@@ -3,6 +3,7 @@ import './App.css';
 import About from './routes/About';
 import Home from './routes/Home';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import ButtonAppBar from './ButtonAppBar';
 
 export default function App() {
   return (
@@ -29,6 +30,8 @@ export default function App() {
 function Layout() {
   return (
     <div>
+
+      <ButtonAppBar />
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
       <nav>
@@ -40,6 +43,7 @@ function Layout() {
             <Link to="/nothing-here">Nothing Here</Link>
        
       </nav>
+
 
       <hr />
 
