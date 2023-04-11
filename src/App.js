@@ -2,8 +2,10 @@ import logo from './NexusHomeRep.svg';
 import './App.css';
 import About from './routes/About';
 import Home from './routes/Home';
+import Services from  './routes/Services';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import ButtonAppBar from './ButtonAppBar';
+
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
         
 
           {/* Using path="*"" means "match anything", so this route
