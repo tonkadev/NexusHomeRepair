@@ -42,6 +42,7 @@ function Layout() {
           so you can think about this <Outlet> as a placeholder for
           the child routes we defined above. */}
       <Outlet />
+      
     </div>
   );
 }
