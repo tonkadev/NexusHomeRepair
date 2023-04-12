@@ -19,10 +19,9 @@ export default function About() {
           fontSize: "28px",
           color: "blue",
           lineHeight: "1.5",
-          maxWidth: "800px", // Set maximum width for text
-          margin: "0 auto", // Center align text
-          padding: "0 16px", // Add padding for better readability
-          marginTop: "20px"
+          maxWidth: "800px",
+          margin: "0 auto",
+          padding: "0 16px",
         }}
       >
         I am a licensed independent contractor providing quality handyman
@@ -31,14 +30,40 @@ export default function About() {
         got you covered.
       </p>
 
-      <style jsx>{`
-        @media screen and (min-width: 1024px) {
-          /* Styles for desktop screens */
-          p {
-            font-size: 32px; // Increase font size for desktop
-          }
-        }
-      `}</style>
+      <h2 style={{ textAlign: "center" }}>Request a Quote</h2>
+
+      <form
+        style={{
+          maxWidth: "800px",
+          margin: "0 auto",
+          padding: "0 16px",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <textarea
+          placeholder="brief description of the Project"
+          style={{ marginBottom: "16px", resize: "none", height: "100px" }}
+        ></textarea>
+        <input
+          type="text"
+          placeholder="Your Name"
+          style={{ marginBottom: "16px" }}
+        />
+        <input
+          type="email"
+          placeholder="Customer Email Address"
+          style={{ marginBottom: "16px" }}
+        />
+        <input
+          type="tel"
+          placeholder="Contact Phone Number"
+          style={{ marginBottom: "16px" }}
+        />
+        <button type="submit" style={{ alignSelf: "center" }}>
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
