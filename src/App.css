@@ -63,10 +63,16 @@
 @media (max-width: 600px) {
   .services-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 0.5fr);
+    grid-template-rows: auto; /* Change to auto to adjust height based on content */
   }
 
   .service-box {
     padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    aspect-ratio: unset; /* Remove aspect-ratio property to allow height to adjust based on content */
   }
 }
