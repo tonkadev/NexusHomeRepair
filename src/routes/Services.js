@@ -1,7 +1,7 @@
 export default function Services() {
     return (
       <>
-        <h1>I Offer the Following Services</h1>
+        <h1>I Offer the Following Services:</h1>
         <div className="services-grid">
 
         <div className="service-box">
@@ -22,7 +22,7 @@ export default function Services() {
           </div>
           <div className="service-box">
             <h2>Furniture Assembly</h2>
-            <p>ssembly services for Ikea and other furniture brands, accommodating a wide range of furniture types and styles.</p>
+            <p>Assembly services for Ikea and other furniture brands, accommodating a wide range of furniture types and styles.</p>
             {/* Additional information or content for Service 3 */}
           </div>
           <div className="service-box">
@@ -33,7 +33,7 @@ export default function Services() {
       
           <div className="service-box">
             <h2>General Handyman</h2>
-            <p>Don't have the time to tackle those pending tasks around the house? Give me a call!.</p>
+            <p>Don't have the time to tackle those pending tasks around the house? Give me a call!</p>
             <p> (480) 331-4840</p>
             {/* Additional information or content for Service 6 */}
           </div>
