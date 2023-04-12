@@ -32,42 +32,27 @@ export default function About() {
         got you covered.
       </p>
 
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7DCQbJCwkXWqdDwB1ochVizVUlYjSXrbVtaQQ2pErM7pfbw/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-      {/* <h2 style={{ textAlign: "center" }}>Request a Quote</h2>
-
-      <form
+      <div
         style={{
-          maxWidth: "800px",
-          margin: "0 auto",
-          padding: "0 16px",
-          display: "flex",
-          flexDirection: "column",
+          width: "100%", /* Set width to 100% to fill parent container */
+          overflowX: "auto", /* Add horizontal scroll for smaller screens */
+          maxWidth: "640px", /* Set max width to limit iframe size */
+          margin: "0 auto" /* Center align the iframe */
         }}
       >
-        <textarea
-          placeholder="brief description of the Project"
-          style={{ marginBottom: "16px", resize: "none", height: "100px" }}
-        ></textarea>
-        <input
-          type="text"
-          placeholder="Your Name"
-          style={{ marginBottom: "16px" }}
-        />
-        <input
-          type="email"
-          placeholder="Customer Email Address"
-          style={{ marginBottom: "16px" }}
-        />
-        <input
-          type="tel"
-          placeholder="Contact Phone Number"
-          style={{ marginBottom: "16px" }}
-        />
-        <button type="submit" style={{ alignSelf: "center" }}>
-          Submit
-        </button>
-      </form> */}
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd7DCQbJCwkXWqdDwB1ochVizVUlYjSXrbVtaQQ2pErM7pfbw/viewform?embedded=true"
+          width="100%" /* Set width to 100% to fill parent container */
+          height="959" /* Set height to a fixed value */
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+
+      {/* Rest of the code */}
     </div>
   );
 }
