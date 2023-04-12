@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 import AdbIcon from '@mui/icons-material/Adb';
 import Phone from '@mui/icons-material/Phone';
 
+import logo from './myAvatar.png';
+
 function Navbar(){
 
   const navigate = useNavigate(); 
@@ -49,13 +51,13 @@ function Navbar(){
             {/* <MenuIcon /> */}
           </IconButton>
           <Button color="inherit" onClick={handleClick}>Home</Button>
-          <Button color="inherit" onClick={handleAbout}>About</Button>
           <Button color="inherit" onClick={handleServices}>Services</Button>
-         
-          
-          
+          <Button color="inherit" onClick={handleAbout}>About</Button>
           
          
+          
+          
+        
         </Toolbar>
       </AppBar>
       <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
