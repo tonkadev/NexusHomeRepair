@@ -22,6 +22,8 @@ export default function About() {
           maxWidth: "800px",
           margin: "0 auto",
           padding: "0 16px",
+          marginTop: "20px",
+          marginBottom: "20px"
         }}
       >
         I am a licensed independent contractor providing quality handyman
@@ -30,7 +32,9 @@ export default function About() {
         got you covered.
       </p>
 
-      <h2 style={{ textAlign: "center" }}>Request a Quote</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7DCQbJCwkXWqdDwB1ochVizVUlYjSXrbVtaQQ2pErM7pfbw/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+      {/* <h2 style={{ textAlign: "center" }}>Request a Quote</h2>
 
       <form
         style={{
@@ -63,7 +67,7 @@ export default function About() {
         <button type="submit" style={{ alignSelf: "center" }}>
           Submit
         </button>
-      </form>
+      </form> */}
     </div>
   );
 }
