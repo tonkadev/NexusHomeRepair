@@ -5,7 +5,7 @@ import Home from './routes/Home';
 import Services from  './routes/Services';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import ButtonAppBar from './ButtonAppBar';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 export default function App() {
   return (
@@ -34,7 +34,13 @@ export default function App() {
 
 function Layout() {
   return (
+
     <div>
+        <Helmet>
+      <title>Nexus Home Repair and Improvement</title>
+      <meta name='description' content='Nexus Home Repair and Improvement in Mesa, Arizona, offers professional handyman services including installations, furniture assembly, and drywall repair. Contact us for all your home repair and improvement needs.' />
+      <meta name='keywords' content='handyman services, doors, cabinets, electrical repairs, furniture assembly, Mesa Arizona, home repair, home improvement, Nexus Home Repair and Improvement' />
+</Helmet>
 
       <ButtonAppBar />
       {/* A "layout route" is a good place to put markup you want to
