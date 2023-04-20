@@ -1,9 +1,14 @@
 import logo from '../NexusHomeRepV2.svg';
 import '../App.css';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   return (
     <div className="App">
+      <Helmet>
+<title>Nexus Home Repair and Improvment</title>
+<meta name='description' content='Handyman services in Mesa Arizona.' />
+</Helmet>
       <header className="App-header" style={{ backgroundColor: '#f5f5f5' }}>
         <img src={logo} className="App-logo" alt="logo" />
       </header>

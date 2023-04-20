@@ -5,10 +5,11 @@ import Home from './routes/Home';
 import Services from  './routes/Services';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import ButtonAppBar from './ButtonAppBar';
-
+import { HelmetProvider } from 'react-helmet-async';
 
 export default function App() {
   return (
+    <HelmetProvider> 
     <div className="App">
       
        {/* <Link to="about">About Us</Link> */}
@@ -27,6 +28,7 @@ export default function App() {
         </Route>
       </Routes>
     </div>
+    </HelmetProvider>
   );
 }
 
