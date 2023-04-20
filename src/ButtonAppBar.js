@@ -10,9 +10,8 @@ import { useNavigate } from "react-router-dom";
 import AdbIcon from '@mui/icons-material/Adb';
 import Phone from '@mui/icons-material/Phone';
 import Avatar from '@mui/material/Avatar';
-import logo from './nexuscanvalogo.png'
 
-//import logo from './myAvatar.png';
+import logo from './nexuscanvalogo.png';
 
 function Navbar(){
 
@@ -35,45 +34,51 @@ function Navbar(){
     navigate("/services");;
   }
 
-  function ButtonAppBar() {
-    const isMobile = window.innerWidth < 600; // determine if it's mobile view
 
-    return (
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
-          <Toolbar>
-            {!isMobile && (
-              <React.Fragment>
-                <IconButton
-                  size="large"
-                  edge="start"
-                  color="inherit"
-                  aria-label="menu"
-                  sx={{ mr: 2 }}
-                >
-                  {/* <MenuIcon /> */}
-                </IconButton>
-                <Button color="inherit" onClick={handleClick}>Home</Button>
-                <Button color="inherit" onClick={handleServices}>Services</Button>
-                <Button color="inherit" onClick={handleAbout}>About</Button>
-              </React.Fragment>
-            )}
-            <Box sx={{ flexGrow: 1 }} />
-            <Box sx={{ flexGrow: 0 }}>
+
+ function ButtonAppBar() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            {/* <MenuIcon /> */}
+          </IconButton>
+
+          {/* The Box component that holds the links */}
+          <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+            <Button color="inherit" onClick={handleClick}>Home</Button>
+            <Button color="inherit" onClick={handleServices}>Services</Button>
+            <Button color="inherit" onClick={handleAbout}>About</Button>
+          </Box>
+
+          <Box sx={{ flexGrow: 0 }}>
+           
               <IconButton>
                 <Avatar alt="Remy Sharp" src={logo} />
               </IconButton>
-            </Box>
-          </Toolbar>
-        </AppBar>
-        <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-           Call (480) 331-4840
-        </Typography>
-      </Box>
-    );
-  }
-
-  return <ButtonAppBar />;
+        
+            
+          </Box>
+          
+          
+        
+        </Toolbar>
+      </AppBar>
+      <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+             Call (480) 331-4840
+            </Typography>
+    </Box>
+  );
+}
+return <ButtonAppBar />;
 }
 
 export default Navbar;
