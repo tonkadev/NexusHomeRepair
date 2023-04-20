@@ -10,7 +10,7 @@ export default function About() {
       <Avatar
         alt="profile pic"
         src={logo}
-        style={{ width: "150px", height: "150px", margin: "0 auto" }}
+        style={{ width: "300px", height: "300px", margin: "0 auto" }}
       />
 
       <p

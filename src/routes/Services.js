@@ -10,12 +10,6 @@ export default function Services() {
             {/* Additional information or content for Service 5 */}
           </div>
           <div className="service-box">
-            
-            <h2>Electrical  Repair</h2>
-            <p>Installation and repair of lighting fixtures, ceiling fans, wall outlets, and switches.</p>
-            {/* Additional information or content for Service 1 */}
-          </div>
-          <div className="service-box">
             <h2>Finish Carpentry</h2>
             <p>Installation of trim, molding, doors, and cabinetry.</p>
             {/* Additional information or content for Service 2 */}
@@ -26,6 +20,12 @@ export default function Services() {
             {/* Additional information or content for Service 3 */}
           </div>
           <div className="service-box">
+            <h2>Electrical  Repair</h2>
+            <p>Installation and repair of lighting fixtures, ceiling fans, wall outlets, and switches.</p>
+            {/* Additional information or content for Service 1 */}
+          </div>
+         
+          <div className="service-box">
             <h2>Drywall Repair</h2>
             <p>Patching of holes and cracks, repairs on corners and bullnose.</p>
             {/* Additional information or content for Service 4 */}
@@ -33,7 +33,7 @@ export default function Services() {
       
           <div className="service-box">
             <h2>General Handyman</h2>
-            <p>Don't have the time to tackle those pending tasks around the house? Give me a call!</p>
+            <p>Don't have the time to tackle those TODO items around the house? Give me a call!</p>
             <p> (480) 331-4840</p>
             {/* Additional information or content for Service 6 */}
           </div>
