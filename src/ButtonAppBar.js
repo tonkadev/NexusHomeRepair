@@ -75,6 +75,9 @@ function Navbar(){
       <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
              Call (480) 331-4840
             </Typography>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+             nexushomerepair@gmail.com
+            </Typography>  
     </Box>
   );
 }
