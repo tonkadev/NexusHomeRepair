@@ -1,4 +1,4 @@
-import logo from './NexusHomeRep.svg';
+
 import './App.css';
 import About from './routes/About';
 import Home from './routes/Home';

@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "@mui/material/Avatar";
-import logo from "../myAvatar.png";
+import logo from "../myAvatar2.png";
 
 export default function About() {
   return (
@@ -9,8 +9,9 @@ export default function About() {
 
       <Avatar
         alt="profile pic"
+        variant="rounded"
         src={logo}
-        style={{ width: "300px", height: "300px", margin: "0 auto" }}
+        style={{ width: "325px", height: "360px", margin: "0 auto" }}
       />
 
       <p
