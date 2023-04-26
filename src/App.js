@@ -39,7 +39,7 @@ function Layout() {
         <Helmet>
       <title>Nexus Home Repair and Improvement</title>
       <meta name='description' content='Nexus Home Repair and Improvement in Mesa, Arizona, offers professional handyman services including installations, furniture assembly, and drywall repair. Contact us for all your home repair and improvement needs.' />
-      <meta name='keywords' content='handyman services, doors, cabinets, electrical repairs, furniture assembly, Mesa Arizona, home repair, home improvement, Nexus Home Repair and Improvement' />
+      <meta name='keywords' content='Red mountain ranch, handyman, doors, cabinets, electrical repairs, furniture assembly, Mesa Arizona, home repair, home improvement, Nexus Home Repair and Improvement' />
 </Helmet>
 
       <ButtonAppBar />
