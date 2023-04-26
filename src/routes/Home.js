@@ -3,23 +3,59 @@ import '../App.css';
 import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
+
+  function handleSubmit(event) {
+    event.preventDefault(); // prevent the default form submission behavior
+    const form = document.getElementById('myForm');
+    const formData = new FormData(form);
+    const data = {};
+    for (let [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    };
+    fetch('https://formworker.nexusgig.com', options)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+      });
+  }
+
   return (
     <div className="App">
+      <Helmet>
+        <title>Nexus Home Rep V2</title>
+        <meta name="description" content="Nexus Home Rep Version 2" />
+      </Helmet>
       <header className="App-header" style={{ backgroundColor: '#f5f5f5' }}>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
       <div className="iframe-container">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSd7DCQbJCwkXWqdDwB1ochVizVUlYjSXrbVtaQQ2pErM7pfbw/viewform?embedded=true"
-          width="100%" /* Set width to 100% to fill parent container */
-          height="959" /* Set height to a fixed value */
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
+        <form id="myForm" onSubmit={handleSubmit}>
+          <label>
+            Name:
+            <input type="text" name="name" />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
       </div>
 
       <style>
