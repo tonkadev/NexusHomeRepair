@@ -44,7 +44,7 @@ export default function Home() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <div className="iframe-container">
+      {/* <div className="iframe-container">
         <form id="myForm" onSubmit={handleSubmit}>
           <label>
             Name:
@@ -56,7 +56,21 @@ export default function Home() {
           </label>
           <button type="submit">Submit</button>
         </form>
+      </div> */}
+
+      <div className="iframe-container">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd7DCQbJCwkXWqdDwB1ochVizVUlYjSXrbVtaQQ2pErM7pfbw/viewform?embedded=true"
+          width="100%" /* Set width to 100% to fill parent container */
+          height="959" /* Set height to a fixed value */
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
       </div>
+
 
       <style>
         {`
