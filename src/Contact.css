@@ -25,13 +25,15 @@
   input[type="text"],
   input[type="email"],
   input[type="tel"],
-  textarea {
+  textarea,
+  select {
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
+    background-color: #f2f2f2;
   }
   
   textarea {
