@@ -2,6 +2,7 @@
 import './App.css';
 import About from './routes/About';
 import Home from './routes/Home';
+import Contact from './routes/Contact';
 import Services from  './routes/Services';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import ButtonAppBar from './ButtonAppBar';
@@ -19,6 +20,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
+          <Route path="contact" element={<Contact />} />
          
 
           {/* Using path="*"" means "match anything", so this route
