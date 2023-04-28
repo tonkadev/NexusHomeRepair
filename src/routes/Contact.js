@@ -13,31 +13,16 @@ export default function Contact() {
     for (let [key, value] of formData.entries()) {
       data[key] = value;
     }
-  
-    const corsOptions = {
-      method: 'OPTIONS',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-  
-    const postOptions = {
+    const options = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
     };
-  
-    fetch('https://formworker.nexusgig.com', corsOptions)
-      .then(corsResponse => {
-        if (!corsResponse.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return fetch('https://formworker.nexusgig.com', postOptions);
-      })
-      .then(postResponse => {
-        if (!postResponse.ok) {
+    fetch('https://formworker.nexusgig.com', options)
+      .then(response => {
+        if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         const successMsg = document.getElementById('successMsg');
@@ -52,7 +37,6 @@ export default function Contact() {
         console.error('There was a problem with the fetch operation:', error);
       });
   }
-  
   
 
   return (
