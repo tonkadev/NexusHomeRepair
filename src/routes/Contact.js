@@ -20,7 +20,7 @@ export default function Contact() {
       },
       body: JSON.stringify(data)
     };
-    fetch('https://formworker.nexusgig.com', options, {mode: 'cors-with-forced-preflight'})
+    fetch('https://formworker.nexusgig.com', options, {mode: 'no-cors'})
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
