@@ -1,9 +1,21 @@
 import logo from '../NexusHomeRepV2.svg';
 import '../Contact.css';
+import { useState } from 'react'; // <-- added useState hook
 import { useHistory } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+
+  const navigate = useNavigate();
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // <-- added state variable
+
+  function handleSuccess() {
+    setShowSuccessMessage(true); // <-- set state to display success message
+    setTimeout(() => {
+      setShowSuccessMessage(false); // <-- reset state to hide success message after a delay
+      navigate("/");
+    }, 3000);
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -25,27 +37,25 @@ export default function Contact() {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        const successMsg = document.getElementById('successMsg');
-        successMsg.style.display = 'block';
-        form.reset();
-        setTimeout(() => {
-          successMsg.style.display = 'none';
-          window.location.href = '/';
-        }, 3000);
+        //execute success message
+        handleSuccess();
+
       })
       .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
       });
   }
-  
 
   return (
     <div className="contact-form">
+      {showSuccessMessage &&   <h2 style={{color: "green", textAlign: "center"}}>
+          Thanks for submitting your request!
+        </h2>} {/* <-- display success message if showSuccessMessage is true */}
       <form id="myForm" onSubmit={handleSubmit}>
         <label>
           What type of service are you looking for?*
           <select name="serviceType" required>
-          <option value="General Handyman">General Handyman</option>
+            <option value="General Handyman">General Handyman</option>
             <option value="Wall Mount Installation">Wall Mount Installation</option>
             <option value="Furniture Assembly">Furniture Assembly</option>
             <option value="Trim/Finish Carpentry">Trim/Finish Carpentry</option>

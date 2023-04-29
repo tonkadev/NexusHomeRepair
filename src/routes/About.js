@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from "@mui/material/Avatar";
 import logo from "../myAvatar2.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -33,25 +34,6 @@ export default function About() {
         got you covered.
       </p>
 
-      <div
-        style={{
-          width: "100%", /* Set width to 100% to fill parent container */
-          overflowX: "auto", /* Add horizontal scroll for smaller screens */
-          maxWidth: "640px", /* Set max width to limit iframe size */
-          margin: "0 auto" /* Center align the iframe */
-        }}
-      >
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSd7DCQbJCwkXWqdDwB1ochVizVUlYjSXrbVtaQQ2pErM7pfbw/viewform?embedded=true"
-          width="100%" /* Set width to 100% to fill parent container */
-          height="959" /* Set height to a fixed value */
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
-      </div>
 
       {/* Rest of the code */}
     </div>
