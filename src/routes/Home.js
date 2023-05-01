@@ -1,4 +1,4 @@
-import logo from '../NexusHomeRepV2.svg';
+import logo from '../NexusHome.svg';
 import '../App.css';
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
@@ -45,24 +45,9 @@ export default function Home() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      {/* <div className="iframe-container">
-        <form id="myForm" onSubmit={handleSubmit}>
-          <label>
-            Name:
-            <input type="text" name="name" />
-          </label>
-          <label>
-            Email:
-            <input type="email" name="email" />
-          </label>
-          <button type="submit">Submit</button>
-        </form>
-      </div> */}
-
-<Link to="/contact" relative="path">
-          Request a free estimate
-        </Link>
-      
+      <Link to="/contact" relative="path">
+        Request a free estimate
+      </Link>
 
     </div>
   );

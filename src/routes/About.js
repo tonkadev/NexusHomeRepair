@@ -28,7 +28,7 @@ export default function About() {
           marginBottom: "20px"
         }}
       >
-        I am a licensed independent contractor providing quality handyman
+        I am a licensed contractor providing quality handyman
         services to customers in N.E. Mesa and vicinity. Whether you need help
         with minor repairs or are looking to spruce up your living space, I've
         got you covered.
