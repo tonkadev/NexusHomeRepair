@@ -18,7 +18,7 @@ export default function About() {
       <p
         style={{
           fontFamily: "Arial",
-          fontSize: "28px",
+          fontSize: "26px",
           color: "blue",
           lineHeight: "1.5",
           maxWidth: "800px",
@@ -28,10 +28,14 @@ export default function About() {
           marginBottom: "20px"
         }}
       >
-        I am a licensed contractor providing quality handyman
-        services to customers in N.E. Mesa and vicinity. Whether you need help
-        with minor repairs or are looking to spruce up your living space, I've
-        got you covered.
+        My name is Rudy, I am a licensed contractor providing skilled handyman services to customers in N.E. Mesa and vicinity. 
+        I am committed to providing top-notch service and ensuring that your home improvement and repair projects are completed efficiently and to your satisfaction.
+        I understand the importance of having a reliable handyman who can take care of your maintenance needs,
+        and I am dedicated to providing excellent customer service, timely response, and competitive pricing. 
+        Whether you need help with minor repairs or major renovations, I have the expertise and tools to get the job done right. 
+        I take pride in serving the Mesa community and look forward to working with you. 
+        Please don't hesitate to contact me with any questions or to schedule an appointment. 
+        Thank you for considering my handyman services.
       </p>
 
 
