@@ -1,4 +1,4 @@
-import logo from '../NexusHome.svg';
+import logo from '../NexusHomeSc.svg';
 import '../App.css';
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ export default function Home() {
         <title>Nexus Home Rep V2</title>
         <meta name="description" content="Nexus Home Rep Version 2" />
       </Helmet>
-      <header className="App-header" style={{ backgroundColor: '#f5f5f5' }}>
+      <header className="App-header" >
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
