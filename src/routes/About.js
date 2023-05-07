@@ -15,7 +15,7 @@ export default function About() {
           alt="profile pic"
           variant="rounded"
           src={logo}
-          style={{ width: "325px", height: "360px", margin: "0 auto" }}
+          style={{ width: "200px", height: "225px", margin: "0 auto" }}
         />
       </div>
 
