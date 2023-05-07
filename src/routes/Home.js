@@ -44,6 +44,9 @@ export default function Home() {
       <header className="App-header" >
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+      <div>
+        <p className='italic'>Guaranteed quality work at affordable prices</p>
+      </div>
 
       <Link to="/contact" relative="path">
         Request a free estimate

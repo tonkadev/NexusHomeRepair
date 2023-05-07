@@ -3,6 +3,10 @@
  
 }
 
+.italic {
+  font-style: italic;
+}
+
 .App-logo {
   height: 65vmin;
   pointer-events: none;
