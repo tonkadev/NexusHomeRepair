@@ -1,4 +1,4 @@
-import logo from '../NexusHomeRepV2.svg';
+
 import '../Contact.css';
 import { useState } from 'react'; // <-- added useState hook
 import { useHistory } from 'react-router-dom';
