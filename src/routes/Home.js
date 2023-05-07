@@ -1,4 +1,4 @@
-import logo from '../NexusHomeHero.svg';
+import logo from '../NexusHomeHero1.0.svg';
 import '../App.css';
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
