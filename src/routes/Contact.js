@@ -19,6 +19,10 @@ export default function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+
     const form = document.getElementById('myForm');
     const formData = new FormData(form);
     const data = {};
