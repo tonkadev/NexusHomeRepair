@@ -30,7 +30,7 @@ export default function Services() {
 
         <div className="service-box">
           <h2>Drywall Repair</h2>
-          <p>Patching of holes and cracks, repairs on corners and bullnose.</p>
+          <p>Patching of holes and cracks, corner and bullnose edge repairs.</p>
           {/* Additional information or content for Service 4 */}
         </div>
 
