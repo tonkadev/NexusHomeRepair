@@ -30,7 +30,7 @@ export default function About() {
         </p>
         <p className="text">
           I understand the importance of having a reliable handyman who can take care of your maintenance needs, and I am dedicated to providing excellent customer service, a timely response, and competitive pricing. 
-          Whether you need help with minor repairs or major renovations, I have the expertise and tools to get the job done right. 
+          Whether you need help with minor repairs or more extensive home improvement projects, I have the expertise and tools to get the job done right. 
         </p>
         <p className="text">
           I take pride in serving the Mesa community and look forward to working with you. 
