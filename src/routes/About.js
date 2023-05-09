@@ -21,7 +21,7 @@ export default function About() {
 
       <div className="text-container">
         <p className="text">
-          Hi, my name is Rudy. I am a licensed contractor and skilled handyman providing services to customers in N.E. Mesa and the surrounding area. 
+          Hello, my name is Rudy. I am a licensed contractor and skilled handyman providing services to customers in N.E. Mesa and the surrounding area. 
          
         </p>
         <p className="text">
