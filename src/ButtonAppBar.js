@@ -56,7 +56,7 @@ function Navbar(){
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
             <Button color="inherit" onClick={handleClick}>Home</Button>
             <Button color="inherit" onClick={handleServices}>Services</Button>
-            <Button color="inherit" onClick={handleAbout}>About</Button>
+            {/* <Button color="inherit" onClick={handleAbout}>About</Button> */}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

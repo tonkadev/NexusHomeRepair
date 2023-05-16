@@ -2,6 +2,8 @@ import logo from '../NexusHomeHero1.0.svg';
 import '../App.css';
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
+import Avatar from "@mui/material/Avatar";
+import me from "../myAvatar.png";
 
 export default function Home() {
 
@@ -45,8 +47,35 @@ export default function Home() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <div>
-        <p className='italic'>Guaranteed quality work at affordable prices</p>
+        <h4><p className='italic'>Guaranteed quality work at affordable prices</p></h4>
       </div>
+
+      <h1>About Me</h1>
+
+<div className="avatar-container">
+  <Avatar
+    alt="profile pic"
+    variant="rounded"
+    src={me}
+    style={{ width: "150px", height: "150px", margin: "0 auto" }}
+  />
+</div>
+
+<div className="text-container">
+  <p className="text">
+    I am your local handyman in Northeast Mesa with experience in all sorts of home repair and improvement projects. 
+     I enjoy helping people with their household needs and take pride in delivering high-quality workmanship. 
+     Whether it's fixing a leaky faucet, installing new light fixtures, or painting a room, 
+     I have the skills and knowledge to tackle any task efficiently and effectively. 
+     My passion for problem-solving and attention to detail ensure that I can find creative solutions 
+     to any home-related challenge. I am licensed, bonded and Insured so you can rest easy knowing 
+     that your home repair and improvement projects are in safe and reliable hands, 
+     with added protection against any unforeseen events or liabilities.
+
+
+  </p>
+
+</div>
 
       <Link to="/contact" relative="path">
         Request a free estimate
