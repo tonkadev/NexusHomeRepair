@@ -47,8 +47,12 @@ export default function Home() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <div>
-        <h4><p className='italic'>Guaranteed quality work at affordable prices</p></h4>
+        <h5><p className='italic'>Guaranteed quality work at affordable prices</p></h5>
       </div>
+
+      <h2> <Link to="/contact" relative="path">
+        Request a free estimate
+      </Link></h2>
 
       <h1>About Me</h1>
 
@@ -77,9 +81,7 @@ export default function Home() {
 
 </div>
 
-      <Link to="/contact" relative="path">
-        Request a free estimate
-      </Link>
+    
 
     </div>
   );
