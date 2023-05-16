@@ -10,33 +10,29 @@ export default function About() {
     <div className="App">
       <h1>About Me</h1>
 
-      <div className="avatar-container">
+      {/* <div className="avatar-container">
         <Avatar
           alt="profile pic"
           variant="rounded"
           src={logo}
           style={{ width: "200px", height: "225px", margin: "0 auto" }}
         />
-      </div>
+      </div> */}
 
       <div className="text-container">
         <p className="text">
-          Hello, my name is Rudy. I am a licensed contractor and skilled handyman providing services to customers in N.E. Mesa and the surrounding area. 
-         
+          I am your local handyman in Northeast Mesa with experience in all sorts of home repair and improvement projects. 
+           I enjoy helping people with their household needs and take pride in delivering high-quality workmanship. 
+           Whether it's fixing a leaky faucet, installing new light fixtures, or painting a room, 
+           I have the skills and knowledge to tackle any task efficiently and effectively. 
+           My passion for problem-solving and attention to detail ensure that I can find creative solutions 
+           to any home-related challenge. I am licensed, bonded and Insured so you can rest easy knowing 
+           that your home repair and improvement projects are in safe and reliable hands, 
+           with added protection against any unforeseen events or liabilities.
+
+
         </p>
-        <p className="text">
-        
-          I am committed to providing top-notch service and ensuring that your home improvement and repair projects are completed efficiently and to your satisfaction.
-        </p>
-        <p className="text">
-          I understand the importance of having a reliable handyman who can take care of your maintenance needs, and I am dedicated to providing excellent customer service, a timely response, and competitive pricing. 
-          Whether you need help with minor repairs or more extensive home improvement projects, I have the expertise and tools to get the job done right. 
-        </p>
-        <p className="text">
-          I take pride in serving the Mesa community and look forward to working with you. 
-          Please don't hesitate to contact me with any questions or to schedule an appointment. 
-          Thank you for considering my handyman services.
-        </p>
+
       </div>
 
       {/* Rest of the code */}
