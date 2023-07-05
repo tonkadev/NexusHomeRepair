@@ -36,6 +36,12 @@ function Navbar() {
     setOpen(false);
   }
 
+  function handleAbout() {
+    // Navigate to a different route
+    navigate("/about");
+    setOpen(false);
+  }
+
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -44,6 +50,10 @@ function Navbar() {
     {
       text: 'Home',
       onClick: handleClick,
+    },
+    {
+      text: 'About',
+      onClick: handleAbout,
     },
     {
       text: 'Services',
@@ -72,6 +82,7 @@ function Navbar() {
               <>
                 <Button color="inherit" onClick={handleClick}>Home</Button>
                 <Button color="inherit" onClick={handleServices}>Services</Button>
+                <Button color="inherit" onClick={handleAbout}>About</Button>
               </>
             ) : (
               // Mobile menu
@@ -87,11 +98,7 @@ function Navbar() {
             )}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <IconButton>
-              <Avatar alt="Remy Sharp" src={logo} />
-            </IconButton>
-          </Box>
+         
         </Toolbar>
       </AppBar>
       <Typography variant="h4" component="div" sx={{ flexGrow: 1, marginTop: '15px' }}>

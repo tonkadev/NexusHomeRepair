@@ -54,9 +54,9 @@ export default function Home() {
         Request a free estimate
       </Link></h2>
 
-      <h1>About Me</h1>
+      {/* <h1>About Me</h1> */}
 
-<div className="avatar-container">
+{/* <div className="avatar-container">
   <Avatar
     alt="profile pic"
     variant="rounded"
@@ -80,7 +80,7 @@ export default function Home() {
 
   </p>
 
-</div>
+</div> */}
 
     
 
