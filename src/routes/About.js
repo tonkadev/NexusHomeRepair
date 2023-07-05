@@ -22,7 +22,7 @@ export default function About() {
       <div className="text-container">
         <p className="text">
           I am a licensed contractor providing handyman services in Northeast Mesa - 85215 and vicinity.  
-          I have experience in all sorts of home repair and improvement projects. 
+          I have experience with all sorts of home repair and improvement projects. 
           I enjoy helping people with their household needs and take pride in delivering high-quality workmanship. 
           My passion for problem-solving and attention to detail ensure that I can find creative solutions 
            to any home-related challenge. 
