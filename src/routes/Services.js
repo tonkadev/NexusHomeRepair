@@ -40,9 +40,9 @@ export default function Services() {
           <p> (480) 331-4840</p>
           {/* Additional information or content for Service 6 */}
         </div>
-        {/* <Link to="/contact" relative="path">
+        <Link to="/contact" relative="path">
           Request a free estimate
-        </Link> */}
+        </Link>
       </div>
     </>
   );
