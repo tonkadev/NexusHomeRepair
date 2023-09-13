@@ -50,9 +50,9 @@ export default function Home() {
         <h5><p className='italic'>Guaranteed quality work at affordable prices</p></h5>
       </div>
 
-      {/* <h2> <Link to="/contact" relative="path">
+      <h2> <Link to="/contact" relative="path">
         Request a free estimate
-      </Link></h2> */}
+      </Link></h2>
 
       {/* <h1>About Me</h1> */}
 
